@@ -18,7 +18,7 @@ function enviarDados() {
         },
         body: JSON.stringify({ nome: nome, sobrenome: sobrenome, telefone: telefone, email: email, senha: senha, assunto: assunto, mensagem: mensagem, departamento: departamento, cópiadeemail: copiadeemail })
     })
-        // Converte a resposta para JSON
+        // Converte a resposta para JSO
         .then(response => response.json())
 }
 
