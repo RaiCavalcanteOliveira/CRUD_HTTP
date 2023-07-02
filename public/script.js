@@ -134,7 +134,7 @@ function limparPesquisa() {
 function buscarDados() {
 
     const id = document.getElementById('id').value;
-    fetch(`http://localhost:3000/Cadastro/${id}`, {
+    fetch(`Cadastro/${id}`, {
         method: 'GET'
     })
         .then(response => response.json())
@@ -162,7 +162,7 @@ function buscarDadosInput() {
     const id = document.getElementById('id').value;
    
 
-    fetch(`http://localhost:3000/Cadastro/${id}`, {
+    fetch(`Cadastro/${id}`, {
         method: 'GET'
     })
         .then(response => response.json())
